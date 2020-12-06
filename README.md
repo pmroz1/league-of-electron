@@ -1,46 +1,78 @@
-# electron-webpack-quick-start
-> A bare minimum project structure to get started developing with [`electron-webpack`](https://github.com/electron-userland/electron-webpack).
+# League-of-Electron
+[![Build Status][travis-image]][travis-url]
 
-Thanks to the power of `electron-webpack` this template comes packed with...
+League-of-Electron is an fanmade League of Legends game client. Build with Electron and React.
 
-* Use of [`webpack-dev-server`](https://github.com/webpack/webpack-dev-server) for development
-* HMR for both `renderer` and `main` processes
-* Use of [`babel-preset-env`](https://github.com/babel/babel-preset-env) that is automatically configured based on your `electron` version
-* Use of [`electron-builder`](https://github.com/electron-userland/electron-builder) to package and build a distributable electron application
+## Development Requirements
 
-Make sure to check out [`electron-webpack`'s documentation](https://webpack.electron.build/) for more details.
+- Node.js
+- Electron
+- npm
+- react
+- yarn
 
-## Getting Started
-Simply clone down this repository, install dependencies, and get started on your application.
+## Download / Clone
 
-The use of the [yarn](https://yarnpkg.com/) package manager is **strongly** recommended, as opposed to using `npm`.
-
-```bash
-# create a directory of your choice, and copy template using curl
-mkdir new-electron-webpack-project && cd new-electron-webpack-project
-curl -fsSL https://github.com/electron-userland/electron-webpack-quick-start/archive/master.tar.gz | tar -xz --strip-components 1
-
-# or copy template using git clone
-git clone https://github.com/electron-userland/electron-webpack-quick-start.git
-cd electron-webpack-quick-start
-rm -rf .git
-
-# install dependencies
-yarn
+Windows:
+```sh
+git clone https://github.com/ReformedMrozu/league-of-electron
 ```
 
-### Development Scripts
+## Development setup
 
-```bash
-# run application in development mode
-yarn dev
+After cloning repo (or downolading and unzip) run following commands
 
-# compile source code and create webpack output
-yarn compile
-
-# `yarn compile` & create build with electron-builder
-yarn dist
-
-# `yarn compile` & create unpacked build with electron-builder
-yarn dist:dir
+```sh
+npm install
 ```
+Script above installs all dependencies
+
+## Run test enviroment
+
+```sh
+yarn run dev
+```
+
+## Pack application
+
+```sh
+electron-packager /Root target-app-name 
+```
+
+optional flags
+```sh
+-platform=linux 
+```
+
+```sh
+-arch=x64
+```
+
+## Release History
+
+* 0.0.1
+    * Basic project structure
+
+## Contributing
+
+1. Fork it (<https://github.com/yourname/yourproject/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
+
+<!-- Markdown link & img dfn's -->
+[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/datadog-metrics
+[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[wiki]: https://github.com/yourname/yourproject/wiki
+
+
+## Meta
+
+Author – [@PiotrMróz](https://twitter.com/ReformedMrozu) 
+
+Distributed under the MIT license. See ``LICENSE`` for more information.
+
+[https://github.com/ReformedMrozu](https://github.com/ReformedMrozu/league-of-electron)
