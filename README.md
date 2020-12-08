@@ -11,10 +11,13 @@ We are aleso using  Chromium 87.0.4280.67, and Electron 11.0.3.
 
 ## Download / Clone
 
-Windows:
+Windows, linux & OSX 
+
 ```sh
 git clone https://github.com/ReformedMrozu/league-of-electron
 ```
+
+or you can just download zip file of repo.
 
 ## Development setup
 
@@ -28,7 +31,7 @@ Script above installs all dependencies
 ## Run test enviroment
 
 ```sh
-yarn run dev
+npm start
 ```
 
 ## Pack application
@@ -41,7 +44,6 @@ optional flags
 ```sh
 -platform=linux 
 ```
-
 ```sh
 -arch=x64
 ```
